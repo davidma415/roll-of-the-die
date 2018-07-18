@@ -7,7 +7,7 @@ end
 def sort_rolls
   counter = 1
   rolls = []
-  while counter <= 10
+  while counter <= 5
     rolls.push(roll_die)
     counter += 1
   end
@@ -18,6 +18,8 @@ def print_res(rolls)
   rolls.each do |x|
     puts "The result of your roll is #{x}"
   end
+  puts "The lowest number is #{rolls.first}"
+  puts "The highest number is #{rolls.last}"
 end
 
 def init
